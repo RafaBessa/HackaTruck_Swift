@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1815" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0mG-Ys-bah">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="X9E-CO-tHW">
+            <objects>
+                <viewController id="QUp-D5-UdH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hQc-mF-6xD"/>
+                        <viewControllerLayoutGuide type="bottom" id="hbk-02-2jB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w2R-dO-WAI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="00k-b0-nK5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6La-Ks-8fg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="-155"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hCv-1J-gai">
+            <objects>
+                <tabBarController id="0mG-Ys-bah" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="f4N-Ab-S3Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QUp-D5-UdH" kind="relationship" relationship="viewControllers" id="yMA-Fh-AZQ"/>
+                        <segue destination="BCl-qZ-29d" kind="relationship" relationship="viewControllers" id="QyD-kZ-FaR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P19-OL-8Jv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-419" y="172"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="BFy-a2-1T1">
+            <objects>
+                <tableViewController id="yoF-ou-Gw9" customClass="TableViewController" customModule="DesafioTrocaTela" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="153" sectionHeaderHeight="28" sectionFooterHeight="28" id="XY4-MF-k3I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicIdentifier" rowHeight="153" id="uVg-hp-FfQ" customClass="TableViewCell" customModule="DesafioTrocaTela" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="153"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uVg-hp-FfQ" id="0TW-70-ubC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="152.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gGk-ua-jvI">
+                                            <rect key="frame" x="8" y="24" width="359" height="122"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Musica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74x-ir-fkX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAU-If-enH">
+                                                    <rect key="frame" x="0.0" y="46" width="359" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3V-Wj-wWZ">
+                                                    <rect key="frame" x="0.0" y="92" width="359" height="30"/>
+                                                    <color key="backgroundColor" red="0.82298975413425313" green="0.84698581890373292" blue="0.87103949652777779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Info">
+                                                        <color key="titleColor" red="0.99874526259999996" green="0.0" blue="0.0048228097150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="Info:" destination="uVg-hp-FfQ" eventType="touchUpInside" id="85b-a2-iQG"/>
+                                                        <segue destination="Ed2-Ow-DCl" kind="show" identifier="proxTela" id="PpH-7n-bNT"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gGk-ua-jvI" firstAttribute="top" secondItem="0TW-70-ubC" secondAttribute="topMargin" constant="16" id="604-bh-F4t"/>
+                                        <constraint firstItem="gGk-ua-jvI" firstAttribute="leading" secondItem="0TW-70-ubC" secondAttribute="leadingMargin" id="XQh-AI-51v"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gGk-ua-jvI" secondAttribute="trailing" id="iRa-5S-OlH"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="Artista" destination="hAU-If-enH" id="Mws-oQ-dpM"/>
+                                    <outlet property="NomeMusica" destination="74x-ir-fkX" id="BHz-sC-og7"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yoF-ou-Gw9" id="dZd-1R-EDl"/>
+                            <outlet property="delegate" destination="yoF-ou-Gw9" id="vVO-f9-SI4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="2xE-rP-qQI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crn-xU-VJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1495.2" y="635.53223388305855"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2KX-bs-E7t">
+            <objects>
+                <viewController id="Ed2-Ow-DCl" customClass="ViewController" customModule="DesafioTrocaTela" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="41f-VO-Tup"/>
+                        <viewControllerLayoutGuide type="bottom" id="6cV-on-2yx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dv1-8z-d0i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="sWO-Hh-aTP">
+                                <rect key="frame" x="16" y="80" width="343" height="287.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbh-kD-KPT">
+                                        <rect key="frame" x="135.5" y="0.0" width="72.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kkH-bF-Mtw">
+                                        <rect key="frame" x="126.5" y="66" width="90.5" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="bc2-4S-8iS"/>
+                                            <constraint firstAttribute="width" constant="90" id="gpl-WP-inn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lDt-hf-9bf">
+                                        <rect key="frame" x="150.5" y="186" width="42" height="101.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQn-Sp-fmv">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m10-8x-OpW">
+                                                <rect key="frame" x="0.0" y="40.5" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgI-YA-T3Q">
+                                                <rect key="frame" x="0.0" y="81" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sWO-Hh-aTP" firstAttribute="top" secondItem="41f-VO-Tup" secondAttribute="bottom" constant="16" id="Bri-WW-QmT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sWO-Hh-aTP" secondAttribute="trailing" id="d0Q-XT-jea"/>
+                            <constraint firstItem="sWO-Hh-aTP" firstAttribute="leading" secondItem="dv1-8z-d0i" secondAttribute="leadingMargin" id="dTj-xB-ORy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Album" destination="pQn-Sp-fmv" id="qq4-ah-jmJ"/>
+                        <outlet property="Artista" destination="lgI-YA-T3Q" id="Vqa-Ih-dGm"/>
+                        <outlet property="Imagem" destination="kkH-bF-Mtw" id="woo-8q-66o"/>
+                        <outlet property="Musica" destination="m10-8x-OpW" id="yr3-rc-NTK"/>
+                        <outlet property="Titulo" destination="Jbh-kD-KPT" id="OA6-De-iLn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5m-fu-Dcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2272.8000000000002" y="635.53223388305855"/>
+        </scene>
+        <!--Musicas-->
+        <scene sceneID="xwW-Uk-DjU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BCl-qZ-29d" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Musicas" id="DEi-P1-grj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nCM-5A-xBN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yoF-ou-Gw9" kind="relationship" relationship="rootViewController" id="grQ-Zt-xhF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsl-HX-ijN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="635.53223388305855"/>
+        </scene>
+    </scenes>
+</document>

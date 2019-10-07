@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1815" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nMz-01-qDu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Minhas Musicas-->
+        <scene sceneID="250-Dr-2VK">
+            <objects>
+                <tableViewController id="ebT-nd-FhX" customClass="MusicTableViewController" customModule="Ispotify" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" id="4TE-Nl-cf8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="music" rowHeight="69" id="qlW-Ci-l8J" customClass="MusicTableViewCell" customModule="Ispotify" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="69"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qlW-Ci-l8J" id="UAP-8k-kb3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="68.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xLL-X2-Cvj">
+                                            <rect key="frame" x="8" y="8" width="359" height="53"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fgf-BT-ejO" userLabel="Music Stack View">
+                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="53"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnS-64-dr5">
+                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="26.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuQ-ab-emJ">
+                                                            <rect key="frame" x="0.0" y="26.5" width="359" height="26.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xLL-X2-Cvj" firstAttribute="leading" secondItem="UAP-8k-kb3" secondAttribute="leading" constant="8" id="YL7-rf-Zlf"/>
+                                        <constraint firstItem="xLL-X2-Cvj" firstAttribute="top" secondItem="UAP-8k-kb3" secondAttribute="top" constant="8" id="uxI-5w-gGP"/>
+                                        <constraint firstAttribute="trailing" secondItem="xLL-X2-Cvj" secondAttribute="trailing" constant="8" id="y8T-lt-G7R"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ArtitstLabel" destination="OuQ-ab-emJ" id="I15-3n-RqO"/>
+                                    <outlet property="TitleLabel" destination="tnS-64-dr5" id="G0Z-lB-E9k"/>
+                                    <segue destination="aC3-fI-A9Y" kind="show" identifier="detail" id="1GC-UD-H4V"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ebT-nd-FhX" id="bzj-rC-DgS"/>
+                            <outlet property="delegate" destination="ebT-nd-FhX" id="jDp-8b-oGA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Minhas Musicas" id="M9K-JT-zUA"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="81F-Up-bJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1120.8" y="232.53373313343329"/>
+        </scene>
+        <!--detail music-->
+        <scene sceneID="6x1-FB-K6S">
+            <objects>
+                <viewController title="detail music" id="aC3-fI-A9Y" customClass="DetailViewController" customModule="Ispotify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LvM-qB-Etc"/>
+                        <viewControllerLayoutGuide type="bottom" id="lyG-RP-ssS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l3l-0l-eEP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="rBz-ih-J1S" userLabel="Global Stack View">
+                                <rect key="frame" x="16" y="80" width="343" height="314"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RFt-sZ-HFS">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="170"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="170" id="wF3-en-9QJ"/>
+                                            <constraint firstAttribute="width" constant="343" id="zju-kl-UpO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="n4p-md-O6s" userLabel="infoStackView">
+                                        <rect key="frame" x="142.5" y="191" width="58.5" height="123"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zak-Of-Nil">
+                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCo-9e-MYp">
+                                                <rect key="frame" x="0.0" y="47" width="58.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2A1-hx-PQ1">
+                                                <rect key="frame" x="0.0" y="94" width="58.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="rBz-ih-J1S" secondAttribute="trailing" id="8DG-O3-M9c"/>
+                            <constraint firstItem="rBz-ih-J1S" firstAttribute="top" secondItem="LvM-qB-Etc" secondAttribute="bottom" constant="16" id="fgL-at-hOL"/>
+                            <constraint firstItem="rBz-ih-J1S" firstAttribute="leading" secondItem="l3l-0l-eEP" secondAttribute="leadingMargin" id="lWB-z4-jKE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AlbumLabel" destination="2A1-hx-PQ1" id="tKi-R0-26G"/>
+                        <outlet property="ArtistLabel" destination="CCo-9e-MYp" id="Isa-LS-Yv9"/>
+                        <outlet property="TitleLabel" destination="Zak-Of-Nil" id="6pV-6d-PO7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCD-Dw-dgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2084" y="232.53373313343329"/>
+        </scene>
+        <!--revelation-->
+        <scene sceneID="Li3-hP-tXb">
+            <objects>
+                <viewController title="revelation" id="SSj-bU-yYJ" customClass="RevelationViewController" customModule="Ispotify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LoQ-KY-yeY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z6J-AX-oIZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="btE-WF-mc4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9f-tt-6bT">
+                                <rect key="frame" x="0.0" y="96" width="375" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axm-Ii-MLj">
+                                <rect key="frame" x="0.0" y="561" width="375" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="See more"/>
+                                <connections>
+                                    <segue destination="Lum-kq-vCD" kind="show" id="bHm-Sp-IB3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arctic Monkeys" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Es-8v-zpF">
+                                <rect key="frame" x="75" y="310" width="225" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-wt-n2E">
+                                <rect key="frame" x="16" y="364" width="343" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Arctic Monkeys are an English rock band formed in 2002 in High Green, a suburb of Sheffield. The band consists of Alex Turner (lead vocals, guitar, piano), Matt Helders (drums, vocals), Jamie Cook (guitar, keyboards) and Nick O'Malley (bass guitar, backing vocals). Former band member Andy Nicholson (bass guitar, backing vocals) left the band in 2006 shortly after their debut album was released.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pZV-tH-Kal"/>
+                    <connections>
+                        <outlet property="Img" destination="K9f-tt-6bT" id="c6r-yU-CnN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2H-4a-UxU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1120.8" y="-547.37631184407803"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yZX-x9-S7U">
+            <objects>
+                <viewController id="Lum-kq-vCD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sz7-A8-tNA"/>
+                        <viewControllerLayoutGuide type="bottom" id="GML-JQ-YKP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Km4-BA-DAF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arctic" translatesAutoresizingMaskIntoConstraints="NO" id="cDD-S4-v15">
+                                <rect key="frame" x="0.0" y="102" width="375" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DHb-In-0pp">
+                                <rect key="frame" x="7" y="311" width="361" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Arctic Monkeys are an English rock band formed in 2002 in High Green, a suburb of Sheffield. The band consists of Alex Turner (lead vocals, guitar, piano), Matt Helders (drums, vocals), Jamie Cook (guitar, keyboards) and Nick O'Malley (bass guitar, backing vocals). Former band member Andy Nicholson (bass guitar, backing vocals) left the band in 2006 shortly after their debut album was released.
+
+They have released six studio albums: Whatever People Say I Am, That's What I'm Not (2006), Favourite Worst Nightmare (2007), Humbug (2009), Suck It and See (2011), AM (2013), and Tranquility Base Hotel &amp; Casino (2018), as well as one live album, At the Apollo (2008). Their debut album is the fastest-selling debut album by a band in UK chart history, and in 2013, Rolling Stone ranked it the 30th-greatest debut album.[1][2]
+
+The band has won seven Brit Awards – winning both Best British Group and Best British Album three times, and have been nominated for three Grammy Awards.[3][4] They also won the Mercury Prize in 2006 for their debut album, in addition to receiving nominations in 2007, 2013 and 2018.[5] The band have headlined at the Glastonbury Festival twice, in 2007 and again in 2013.
+
+Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet, with commentators suggesting they represented the possibility of a change in the way in which new bands are promoted and marketed.[6]</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MkL-R7-aF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2160.8000000000002" y="-547.37631184407803"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OEd-ME-Jsm">
+            <objects>
+                <tabBarController id="nMz-01-qDu" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="cJe-sO-Ug8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="I1f-qd-qNx" kind="relationship" relationship="viewControllers" id="EOK-p9-Lk0"/>
+                        <segue destination="fT8-iU-UKr" kind="relationship" relationship="viewControllers" id="Yx9-Ev-Uvi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvk-IS-E1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-770" y="-220"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IyB-ec-Pz4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fT8-iU-UKr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="W8C-Xz-zd5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GJO-X1-fBL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ebT-nd-FhX" kind="relationship" relationship="rootViewController" id="3a8-bx-xs7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zS-fO-x83" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.59999999999999" y="232.53373313343329"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="43K-bl-LS7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I1f-qd-qNx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="Ags-xb-T0O"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YUd-Rw-UWx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SSj-bU-yYJ" kind="relationship" relationship="rootViewController" id="fux-HA-o0W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxL-Lf-4vK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.59999999999999" y="-547.37631184407803"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arctic" width="298" height="169"/>
+    </resources>
+</document>

@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FC46C6F22245F3C0015AE98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC46C6E22245F3C0015AE98 /* AppDelegate.swift */; };
+		3FC46C7422245F3C0015AE98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC46C7222245F3C0015AE98 /* Main.storyboard */; };
+		3FC46C7622245F3C0015AE98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC46C7522245F3C0015AE98 /* Assets.xcassets */; };
+		3FC46C7922245F3C0015AE98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC46C7722245F3C0015AE98 /* LaunchScreen.storyboard */; };
+		3FC46C81222463680015AE98 /* BrancoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC46C80222463680015AE98 /* BrancoViewController.swift */; };
+		3FC46C83222463920015AE98 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC46C82222463920015AE98 /* TableViewCell.swift */; };
+		3FC46C85222463C50015AE98 /* listaMusica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC46C84222463C50015AE98 /* listaMusica.swift */; };
+		3FC46C87222466790015AE98 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC46C86222466790015AE98 /* TableViewController.swift */; };
+		3FC46C8922247C3B0015AE98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC46C8822247C3B0015AE98 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3FC46C6B22245F3C0015AE98 /* DesafioTrocaTela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioTrocaTela.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC46C6E22245F3C0015AE98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FC46C7322245F3C0015AE98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FC46C7522245F3C0015AE98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FC46C7822245F3C0015AE98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FC46C7A22245F3C0015AE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC46C80222463680015AE98 /* BrancoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrancoViewController.swift; sourceTree = "<group>"; };
+		3FC46C82222463920015AE98 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3FC46C84222463C50015AE98 /* listaMusica.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listaMusica.swift; sourceTree = "<group>"; };
+		3FC46C86222466790015AE98 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3FC46C8822247C3B0015AE98 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FC46C6822245F3C0015AE98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FC46C6222245F3C0015AE98 = {
+			isa = PBXGroup;
+			children = (
+				3FC46C6D22245F3C0015AE98 /* DesafioTrocaTela */,
+				3FC46C6C22245F3C0015AE98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FC46C6C22245F3C0015AE98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FC46C6B22245F3C0015AE98 /* DesafioTrocaTela.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FC46C6D22245F3C0015AE98 /* DesafioTrocaTela */ = {
+			isa = PBXGroup;
+			children = (
+				3FC46C8822247C3B0015AE98 /* ViewController.swift */,
+				3FC46C6E22245F3C0015AE98 /* AppDelegate.swift */,
+				3FC46C7222245F3C0015AE98 /* Main.storyboard */,
+				3FC46C84222463C50015AE98 /* listaMusica.swift */,
+				3FC46C82222463920015AE98 /* TableViewCell.swift */,
+				3FC46C86222466790015AE98 /* TableViewController.swift */,
+				3FC46C7522245F3C0015AE98 /* Assets.xcassets */,
+				3FC46C7722245F3C0015AE98 /* LaunchScreen.storyboard */,
+				3FC46C7A22245F3C0015AE98 /* Info.plist */,
+				3FC46C80222463680015AE98 /* BrancoViewController.swift */,
+			);
+			path = DesafioTrocaTela;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FC46C6A22245F3C0015AE98 /* DesafioTrocaTela */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC46C7D22245F3C0015AE98 /* Build configuration list for PBXNativeTarget "DesafioTrocaTela" */;
+			buildPhases = (
+				3FC46C6722245F3C0015AE98 /* Sources */,
+				3FC46C6822245F3C0015AE98 /* Frameworks */,
+				3FC46C6922245F3C0015AE98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioTrocaTela;
+			productName = DesafioTrocaTela;
+			productReference = 3FC46C6B22245F3C0015AE98 /* DesafioTrocaTela.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FC46C6322245F3C0015AE98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Mari;
+				TargetAttributes = {
+					3FC46C6A22245F3C0015AE98 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3FC46C6622245F3C0015AE98 /* Build configuration list for PBXProject "DesafioTrocaTela" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FC46C6222245F3C0015AE98;
+			productRefGroup = 3FC46C6C22245F3C0015AE98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FC46C6A22245F3C0015AE98 /* DesafioTrocaTela */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FC46C6922245F3C0015AE98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC46C7922245F3C0015AE98 /* LaunchScreen.storyboard in Resources */,
+				3FC46C7622245F3C0015AE98 /* Assets.xcassets in Resources */,
+				3FC46C7422245F3C0015AE98 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FC46C6722245F3C0015AE98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC46C8922247C3B0015AE98 /* ViewController.swift in Sources */,
+				3FC46C83222463920015AE98 /* TableViewCell.swift in Sources */,
+				3FC46C6F22245F3C0015AE98 /* AppDelegate.swift in Sources */,
+				3FC46C81222463680015AE98 /* BrancoViewController.swift in Sources */,
+				3FC46C87222466790015AE98 /* TableViewController.swift in Sources */,
+				3FC46C85222463C50015AE98 /* listaMusica.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FC46C7222245F3C0015AE98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC46C7322245F3C0015AE98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FC46C7722245F3C0015AE98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FC46C7822245F3C0015AE98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FC46C7B22245F3C0015AE98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FC46C7C22245F3C0015AE98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FC46C7E22245F3C0015AE98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesafioTrocaTela/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackatruck.DesafioTrocaTela;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3FC46C7F22245F3C0015AE98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesafioTrocaTela/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackatruck.DesafioTrocaTela;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FC46C6622245F3C0015AE98 /* Build configuration list for PBXProject "DesafioTrocaTela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC46C7B22245F3C0015AE98 /* Debug */,
+				3FC46C7C22245F3C0015AE98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC46C7D22245F3C0015AE98 /* Build configuration list for PBXNativeTarget "DesafioTrocaTela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC46C7E22245F3C0015AE98 /* Debug */,
+				3FC46C7F22245F3C0015AE98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FC46C6322245F3C0015AE98 /* Project object */;
+}
